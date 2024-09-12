@@ -1,0 +1,79 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "language_models": {
+    "openai": {
+      "version": "1",
+      "api_url": "https://api.openai.com/v1"
+    }
+  },
+  "show_inline_completions": true,
+  "languages": {
+    "Python": {
+      "show_inline_completions": true
+    },
+    "Plain Text": {
+      "show_inline_completions": false
+    },
+    "JavaScript": {
+      "format_on_save": "on",
+      "preferred_line_length": 172,
+      "soft_wrap": "preferred_line_length"
+    },
+    "LaTeX": {
+      "show_inline_completions": false,
+      "show_copilot_suggestions": false
+    }
+  },
+  "autosave": "on_focus_change",
+  "theme": "Rosé Pine Dawn",
+  "auto_update": true,
+  "buffer_font_family": "JetBrains Mono",
+  "vim_mode": false,
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "git": {
+    "git_gutter": "tracked_files"
+  },
+  "show_invisibles": true,
+  "file_scan_exclusions": [
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "dist",
+    "build",
+    "out",
+    "target",
+    "flow-typed",
+    "flow-typed-tmp",
+    "flow-typed-tmp-*",
+    ".git/",
+    ".DS_Store"
+  ],
+
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "enabled": true,
+    "version": "2",
+    "provider": null
+  }
+}
