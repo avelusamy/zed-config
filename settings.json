@@ -32,7 +32,7 @@
     }
   },
   "autosave": "on_focus_change",
-  "theme": "Rosé Pine Dawn",
+  "theme": "Catppuccin Latte (pink)",
   "auto_update": true,
   "buffer_font_family": "JetBrains Mono",
   "vim_mode": false,
