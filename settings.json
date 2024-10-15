@@ -7,30 +7,12 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "language_models": {
-    "openai": {
-      "version": "1",
-      "api_url": "https://api.openai.com/v1"
-    }
-  },
   "show_inline_completions": true,
+  "preferred_line_length": 175,
+  "soft_wrap": "preferred_line_length",
   "languages": {
-    "Python": {
-      "show_inline_completions": true
-    },
-    "Plain Text": {
-      "show_inline_completions": false
-    },
-    "JavaScript": {
-      "format_on_save": "on",
-      "preferred_line_length": 175,
-      "soft_wrap": "preferred_line_length"
-    },
     "LaTeX": {
       "show_inline_completions": false,
-      "format_on_save": "on",
-      "soft_wrap": "preferred_line_length",
-      "preferred_line_length": 175,
       "show_copilot_suggestions": false
     }
   },
@@ -38,11 +20,23 @@
   "theme": "Catppuccin Latte (pink)",
   "auto_update": true,
   "buffer_font_family": "JetBrains Mono",
+  "current_line_highlight": "gutter",
   "vim_mode": false,
   "ui_font_size": 16,
   "buffer_font_size": 14,
   "git": {
     "git_gutter": "tracked_files"
+  },
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true,
+    "activate_on_close": "history"
+  },
+  "formatter": "language_server",
+  "journal": {
+    "path": "~",
+    "hour_format": "hour24"
   },
   "show_invisibles": true,
   "file_scan_exclusions": [
@@ -59,7 +53,6 @@
     ".git/",
     ".DS_Store"
   ],
-
   "inlay_hints": {
     "enabled": true,
     "show_type_hints": true,
